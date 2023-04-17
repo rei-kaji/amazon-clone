@@ -17,7 +17,7 @@ const CarouselProduct = () => {
       >
         {Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide key={i} className={`${i == 0 && "ml-3"}`}>
-            <Link to={`/product${i}`}>
+            <Link to={`/product/${i}`}>
               <img
                 src={`/images/product_${i}_small.jpg`}
                 alt="Carousel product"
