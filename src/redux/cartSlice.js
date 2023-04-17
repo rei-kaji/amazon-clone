@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export const cartSlice = createSlice({
-  name: cart,
+  name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action) => {

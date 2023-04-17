@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 import { Search } from "./";
 
 const NavBar = () => {
-  // const cart = useSelector((state) => state.cart.productNumber);
+  const cart = useSelector((state) => state.cart.productsNumber);
+
   return (
     <header className="min-w-[1000px]">
       <div className="flex bg-amazonclone text-white h-[60px]">
@@ -40,7 +41,7 @@ const NavBar = () => {
               <ShoppingCartIcon className="h-[48px]" />
               <div className="relative">
                 <div className="absolute right-[9px] font-bold m-2 text-orange-400">
-                  {/* {cart} */}
+                  {cart}
                 </div>
               </div>
             </div>
